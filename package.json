@@ -1,7 +1,6 @@
 {
   "name": "vercellbase-main",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,8 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "8.3.4",
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
-  }
+    "express": "^5.1.0",
+    "mongoose": "8.3.4",
+    "readline-sync": "^1.4.10"
+  },
+  "keywords": [],
+  "description": ""
 }

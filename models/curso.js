@@ -4,7 +4,7 @@ const Curso = conexao.Schema({
 
     nome: {type:String, required:true},
     area: {type:String, required:true},
-    anofundacao: {type:Number, required:true},
+    anoFundacao: {type:Number, required:true},
     nivel: {type:String, required:true},
 })
 
