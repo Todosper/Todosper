@@ -1,0 +1,175 @@
+/* ==================== ESTILOS GERAIS ==================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #f5f5f5;
+}
+
+/* Container central */
+.container {
+  background: #121212;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(138, 43, 226, 0.5);
+  width: 85%;
+  max-width: 1100px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  color: #7fff7f;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(127, 255, 127, 0.6);
+}
+
+/* ==================== MENU ==================== */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.menu ul li a {
+  display: inline-block;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #7fff7f, #8a2be2);
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(127, 255, 127, 0.6);
+}
+
+/* ==================== FORMULÁRIO ==================== */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #8a2be2;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8a2be2;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #fff;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #7fff7f;
+  box-shadow: 0 0 8px rgba(127, 255, 127, 0.5);
+  outline: none;
+}
+
+/* ==================== BOTÕES ==================== */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.add {
+  background: linear-gradient(135deg, #28a745, #7fff7f);
+  color: #000;
+}
+
+.btn.edit {
+  background: linear-gradient(135deg, #ffc107, #ffdd57);
+  color: #000;
+}
+
+.btn.delete {
+  background: linear-gradient(135deg, #dc3545, #ff6f6f);
+  color: #fff;
+}
+
+.btn.cancelar {
+  background: linear-gradient(135deg, #6c757d, #a0a0a0);
+  color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(138, 43, 226, 0.6);
+}
+
+/* ==================== TABELA ==================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background: linear-gradient(135deg, #8a2be2, #7fff7f);
+  color: #000;
+}
+
+table tr {
+  transition: background 0.3s ease;
+}
+
+table tr:hover {
+  background: rgba(127, 255, 127, 0.1);
+}
+
+/* ==================== BARRA DE PESQUISA ==================== */
+.search {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.search input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #8a2be2;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.search input:focus {
+  border-color: #7fff7f;
+  outline: none;
+}
+
+/* ==================== ANIMAÇÃO ==================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
